@@ -7,4 +7,13 @@ for c in user_input:
         else:
             alphabet[c]=1
 print(alphabet)
-#HW:.isdigit()
+status=True
+for i in alphabet.values():
+    if i==0:
+        status=False
+    else:
+        status=True
+if status==True and len(alphabet)==26:
+    print("It is a panagram!")
+else:
+    print("It's not a panagram")
