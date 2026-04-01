@@ -31,6 +31,21 @@ def draw():
     if next_satellite < satellite_numbers:
         end_time = time.time()
         total_time = end_time - start_time
-        screen.draw.text(str(total_time),(30,30), fontsize = 40)
+        screen.draw.text(str(round(total_time,2)),(30,30), fontsize = 40)
     else:
-        screen.draw.text(str(total_time),(30,30), fontsize = 40)
+        screen.draw.text(str(round(total_time,2)),(30,30), fontsize = 40)
+    
+def on_mouse_down(pos):
+    global next_satellite
+    global lines
+    if next_satellite < satellite_numbers: 
+        if satellites[next_satellite].collidepoint(pos):
+            if next_satellite:
+                lines.append((satellites[next_satellite-1].pos,satellites[next_satellite].pos))
+            next_satellite = next_satellite + 1
+    else:
+        lines = []          
+        next_satellite = 0 
+    
+create_satellites()
+pgzrun.go()
