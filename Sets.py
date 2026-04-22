@@ -24,3 +24,10 @@ st3.remove(2)
 st3.discard(5) # Unlike the remove function, the discard function doesn't throw an error when we try to discard a number that is not present in the list.
 st3.discard(9)# Remove: Present elements. Discard: Present and not present elements.
 print(st3)
+#Set operations - Union, Intersection, Difference, Symmetric Difference:
+a = {1,2,3,4,5}
+b = {4,5,6,7,8}
+print(a.union(b))# Combines sets together and removes duplicates(because sets only store unique elements.)
+print(a.intersection(b))# Prints the overlapping/same elements in the sets.
+print(a.difference(b)) # What is there in a but not in be.
+print(a.symmetric_difference(b))# First does union. Then subtracts the intersection from the union(difference).
