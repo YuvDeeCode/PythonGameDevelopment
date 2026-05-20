@@ -1,0 +1,10 @@
+What is 0.375 as a simplified fraction?,3/10,1/8,3/8,2/5,3
+What is 2a+3b-2a-3b in its simplest form?,0,1,2a,3b,1
+What is 25 squared?,5,25,125,625,4
+What is the square root of 256?,32,14,16,18,3
+What is 62.5 to the power of 1?,0,62.5,1,253.234,2
+What is 354 to the power of 0?,1,354,-1,2345,1
+What is 23 x 45?,892,955,1035,3423,3
+What is the value of the sum of the interior angles of a pentagon?,180,360,540,720,3
+What is the value of an exterior angle of a triangle?,180,120,60,90,2
+What is 2 to the power of 8?,32,64,1,256,4
