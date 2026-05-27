@@ -39,11 +39,11 @@ def draw():
     screen.draw.filled_rect(timerbox,"orange")
     screen.draw.filled_rect(skipbox,"green")
     for answerbox in answerboxes:
-        screen.draw.filled_rect(answerbox,"yellow")
+        screen.draw.filled_rect(answerbox,"black")
     markmessage = "Welcome to Maths Quiz Master!"
     markmessage = markmessage + f"Q:{question_index} of {question_count}"
     screen.draw.text(markmessage,(20,20),color = "white",fontsize = 30)
-    screen.draw.text(timeleft,(740,140),color = "white",fontsize = 30)
+    screen.draw.text(str(timeleft),(740,140),color = "white",fontsize = 30)
     screen.draw.text("Skip",(740,400),color = "white",fontsize = 30)
     if question:
         screen.draw.text(question[0],(40,130),color = "white",fontsize = 30)
@@ -51,7 +51,7 @@ def draw():
         screen.draw.text(question[2],(400,320),color="white",fontsize = 30)
         screen.draw.text(question[3],(50,500),color="white",fontsize=30)
         screen.draw.text(question[4],(400,500),color="white",fontsize=30)
-
+#
 def move_mark():
     markbox.x=markbox.x-2
     if markbox.right<0:
@@ -61,10 +61,10 @@ def update():
 def read_question_file():
     global question_count
     global questions
-    with open(questionsfile,"r") as file:
+    with open("Maths_Questions.txt","r") as file:
         for i in file:
             questions.append(i.strip())
-    questions_count = len(questions)
+    question_count = len(questions)
 def read_next_question():
     global question_index
     question_index = question_index + 1
