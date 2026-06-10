@@ -20,3 +20,5 @@ student1=student("Yuv",9,13)
 student2=student("Mark",8,12)
 student1.info()
 student2.info()
+#Notes: A class is like a blueprint. Init for initialising and assigning attributes as soon as the object is created.
+#Notes: Functions can use these attributes.
