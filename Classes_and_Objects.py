@@ -22,3 +22,13 @@ student1.info()
 student2.info()
 #Notes: A class is like a blueprint. Init for initialising and assigning attributes as soon as the object is created.
 #Notes: Functions can use these attributes.
+class fruit:
+    def __init__(self,name,colour,size):
+        self.colour = colour
+        self.size = size
+        self.name = name
+    def taste_facts(self):
+        print(str(self.name)+" is "+str(self.colour)+" and is "+str(self.size)+" sized.")
+        print(str(self.name)+" is/are tasty!")
+fruit1=fruit("Banana","yellow","medium")
+fruit1.taste_facts()
